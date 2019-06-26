@@ -16,11 +16,11 @@ const btnClose = document.querySelector(".btnClose");
 const popBoxCentral = document.querySelector(".popBoxCentral");
 
 const overlay = document.querySelectorAll(".overlay");
+const singlePop = document.querySelectorAll(".single-pop");
 
+singlePop.forEach(function(singlePop){
 
-overlay.forEach(function(overlay){
-
-overlay.addEventListener("click",function(){
+singlePop.addEventListener("click",function(){
 
    popBoxCentral.classList.add('newPopBoxCentral');
     
