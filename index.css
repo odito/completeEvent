@@ -1,0 +1,969 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav .linkMenu li{
+    list-style: none;
+
+}
+
+nav .linkMenu li a{
+background: #6bb645;
+display: block;
+padding:10px;
+text-decoration: none;
+color: #fff;
+text-transform: uppercase;
+
+}
+
+nav .linkMenu li a:hover{
+    background: rgb(6, 82, 6);
+    display: block;
+    padding:10px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    
+    }
+
+
+
+.arrow{
+    background: #6bb645;
+    display: block;
+    color: #fff; 
+    font-size: 18px;
+    padding:10px;
+}
+
+.arrow:hover{
+    background: rgb(6, 82, 6); 
+}
+
+
+.bar1,
+.bar2,
+.bar3{
+  width: 30px;
+  margin: 5px;
+  height: 3px;
+ background: rgb(212, 211, 211);
+ transition: all 1s ease;
+}
+
+
+.changeBar .bar1{
+ transform: rotate(45deg) translate(6px, 6px);
+
+}
+
+.changeBar .bar2{
+    opacity:0;
+    
+   }
+
+
+   .changeBar .bar3{
+    transform: rotate(-45deg) translate(5px, -6px);
+   
+   }
+
+
+.btn{
+    border:1px solid rgb(212, 211, 211);
+    display: inline-block;
+    align-self: center;
+    cursor: pointer;
+}
+
+.logoBtn{
+    display: flex;
+    justify-content: space-between;
+    padding:10px 15px;
+    border-bottom:1px solid rgb(231, 231, 231);
+    background: #034ea1;
+}
+
+
+.event{
+    text-transform: capitalize;
+}
+.eventName{
+color: rgb(221, 218, 218);
+font-size: 20px;
+}
+
+.date{
+    color:#fff;
+}
+
+.linkMenu{
+    height: 0;
+    list-style: none;
+    overflow: hidden;
+    transition: all 1s ease;
+}
+
+/* in order to open the linkMenu */
+.linksOpen{
+ height: 345px;
+
+}
+
+
+
+
+@media screen and (min-width:900px){
+
+    .btn{
+        display: none;
+    }
+
+
+
+    .logoBtn{
+     
+        border-bottom:0px;
+     
+    }
+
+
+
+    .linkMenu{
+        height: auto;
+        list-style: none;
+        display: flex !important;
+       
+       
+        
+    }
+    
+    /* in order to open the linkMenu */
+    .linksOpen{
+     height: auto;
+     border:1px solid purple;
+    }
+
+ 
+    .arrow:hover{
+        background: #6bb645;
+        transition: all 1s ease;
+    }
+
+
+    .underline{
+        background: transparent;
+        height: 3px;
+        transition: all 0.5s ease;
+        width: 0;
+        margin:0px auto;
+        padding: 2px;
+    }
+
+    .linkMenu li{
+        text-align: center;
+        margin:0 auto;
+       
+        
+    }
+    nav .linkMenu li:hover .underline{
+        background: #fff;
+        height: 3px;
+       margin: 0 auto;
+       width:80px;
+    }
+
+
+
+    nav .linkMenu li:hover .socialMedia{
+        background: #fff;
+        height: 2px;
+       margin: 0 auto;
+       width:110px;
+    }
+
+    nav .linkMenu li a:hover{
+        background: #6bb645;
+        
+        
+        }
+
+        nav .linkMenu li a{
+          margin:0 5px;
+        
+            
+            }
+
+.newLink{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  
+    position: relative;
+    background: #6bb645;
+}
+
+.arrow{
+    list-style: none;
+    position: absolute;
+   right:10px;
+  background: transparent;
+   font-size: 20px;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:1100px){
+
+    .btn{
+        display: none;
+    }
+
+
+    .linkMenu{
+        height: auto;
+        list-style: none;
+        display: flex !important;
+        
+      
+        
+    }
+    
+    /* in order to open the linkMenu */
+    .linksOpen{
+     height: auto;
+    
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        background: #6bb645;
+        align-items: center;
+    }
+
+    .logoBtn{
+        width:19%;
+    }
+
+
+    .arrow:hover{
+        background: #6bb645;
+    }
+
+
+
+
+    nav .linkMenu li a:hover{
+        background: #6bb645;
+     
+        
+        }
+
+        nav .linkMenu li a{
+          margin:0 5px;
+         
+            
+            }
+
+.newLink{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+    position: relative;
+}
+
+.arrow{
+    list-style: none;
+    position: absolute;
+   right:10px;
+}
+
+
+}
+
+
+/* end of nav */
+
+
+/* section main */
+
+.main{
+    height: 90vh;
+
+}
+
+.mainLeft{
+   
+    background: #333333;
+}
+
+.scroll{
+    
+    padding: 20px;
+  
+  
+  
+}
+
+.scroll h2{
+    color: rgb(185, 184, 184);
+    width: 80%;
+    margin:0 auto;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.scroll p{
+    color: #848484;
+    font-size: 17px;
+    width: 80%;
+    margin:0 auto;
+   
+}
+
+.scrollCenter{
+    overflow: auto;
+    height: 200px;
+}
+
+.nomines{
+padding:20px;
+background: #4d4d4d;
+color:#d0d0d0;
+font-size: 19px;
+margin-left: 15%;
+
+}
+
+.nomines{
+    padding:20px;
+    background: #4d4d4d;
+    color:#d0d0d0;
+    font-size: 19px;
+    margin-left: 15%;
+    
+    }
+
+    .panel{
+        padding:20px;
+        text-transform: capitalize;
+        color:#d0d0d0;
+        font-size: 19px;
+        margin-left: 15%; 
+    }
+
+    .mainRight{
+      //height: 100vh;
+     
+    }
+
+
+    @media screen and (min-width:576px){
+.main-center{
+    display: grid;
+    grid-template-columns:30% 70%;
+
+}
+    }
+
+
+    @media screen and (min-width:776px){
+        .main-center{
+            display: grid;
+            grid-template-columns:25% 76%;
+        
+        }
+            }
+
+
+
+
+
+
+
+    @media screen and (min-width:1100px){
+        .main-center{
+            display: grid;
+            grid-template-columns:16.3% 84%;
+        
+        }
+            }
+
+
+
+
+
+            /* pop image */
+
+
+            .single-pop{
+               
+                width:100%;
+                margin:0px auto;
+                height:270px;
+              
+                overflow: hidden;
+                position: relative;
+                /* cursor: pointer; */
+                }
+        
+          
+            
+                
+               .single-pop:hover .store-img{
+               
+            
+              
+               }
+
+               .store-img{
+                height:100%;
+                width: 100%;
+                overflow: hidden;
+               
+                position: absolute;
+                transition: all 1s ease;
+
+               }
+
+               .nameSurname{
+                 position: absolute;
+                 top:190px;
+                 left:20px;
+                 color: #fff;
+                 font-size: 19px;
+                 opacity:1;
+               }
+              
+               .single-pop:hover .nameSurname{
+                opacity:0;
+              
+              }
+
+
+               /* over1 for pink color */
+               .over1{
+                position: absolute;
+                width: 100%;
+                height: 270px;
+               background:linear-gradient(rgba(197, 61, 97, 0.8),rgba(197, 61, 97, 0.8));
+              
+              
+              }
+                 
+              
+              .single-pop:hover .over1{
+                background:transparent;
+             
+              }
+              /*end of over1 for pink color */
+
+                 /* over2 for blue color */
+                 .over2{
+                  position: absolute;
+                  width: 100%;
+                  height: 270px;
+                 background:linear-gradient(rgba(33, 112, 169, 0.8),rgba(33, 112, 169, 0.8));
+                
+                
+                }
+                   
+                
+                .single-pop:hover .over2{
+                  background:transparent;
+                
+                }
+                /*end of over2 for blue color */
+
+               /* over3 for orange color */
+               .over3{
+                position: absolute;
+                width: 100%;
+                height: 270px;
+               background:linear-gradient(rgba(232, 130, 63, 0.8),rgba(232, 130, 63, 0.8));
+              
+              
+              }
+                 
+              
+              .single-pop:hover .over3{
+                background:transparent;
+              
+              }
+              /*end of over3 for orange color */
+
+
+
+
+
+               .task-1{
+            
+                background:url('./pop/task-1.jpg')center/cover no-repeat;
+                 
+               }
+
+               .single-pop:hover .task-1{
+                 transform: scale(1.2);
+              
+               }
+
+
+               .task-2{
+            
+                background:url('./pop/task-3.jpg')center/cover no-repeat;
+
+               }
+
+               .single-pop:hover .task-2{
+                 transform: scale(1.2);
+               
+               }
+
+
+
+               .task-3{
+            
+                background:url('./pop/task-4.jpg')center/cover no-repeat;
+
+               }
+
+               .single-pop:hover .task-3{
+                 transform: scale(1.2);
+               }
+
+
+               .task-4{
+            
+                background:url('./pop/task-2.jpg')center/cover no-repeat;
+
+               }
+
+               .single-pop:hover .task-4{
+                 transform: scale(1.2);
+               }
+
+
+
+               .task-5{
+            
+                background:url('./pop/task-5.jpg')center/cover no-repeat;
+
+               }
+
+               .single-pop:hover .task-5{
+                 transform: scale(1.2);
+               }
+
+
+
+               .task-6{
+            
+                background:url('./pop/task-6.jpg')center/cover no-repeat;
+
+               }
+
+               .single-pop:hover .task-6{
+                 transform: scale(1.2);
+               }
+
+
+        
+               .task-7{
+            
+                background:url('./pop/task-5.jpg')center/cover no-repeat;
+
+               }
+
+               .single-pop:hover .task-7{
+                 transform: scale(1.2);
+               }
+
+
+
+               .task-8{
+            
+                background:url('./pop/task-6.jpg')center/cover no-repeat;
+
+               }
+
+             .single-pop:hover .task-8{
+                 transform: scale(1.2);
+               }
+
+
+               .task-9{
+            
+                background:url('./pop/task-1.jpg')center/cover no-repeat;
+
+               }
+
+              .single-pop:hover .task-9{
+                 transform: scale(1.2);
+               }
+
+
+               .task-10{
+            
+                background:url('./pop/task-3.jpg')center/cover no-repeat;
+
+               }
+
+               .single-pop:hover .task-10{
+                 transform: scale(1.2);
+               }
+
+
+               .task-11{
+            
+                background:url('./pop/task-4.jpg')center/cover no-repeat;
+
+               }
+
+               .single-pop:hover .task-11{
+                 transform: scale(1.2);
+               }
+
+
+               .task-12{
+            
+                background:url('./pop/task-2.jpg')center/cover no-repeat;
+
+               }
+
+               .single-pop:hover .task-12{
+                 transform: scale(1.2);
+               }
+
+
+               .task-13{
+            
+                background:url('./pop/task-2.jpg')center/cover no-repeat;
+
+               }
+
+               .single-pop:hover .task-13{
+                 transform: scale(1.2);
+               }
+
+
+               .task-14{
+            
+                background:url('./pop/task-4.jpg')center/cover no-repeat;
+
+               }
+
+               .single-pop:hover .task-14{
+                 transform: scale(1.2);
+               }
+
+
+               .task-15{
+            
+                background:url('./pop/task-5.jpg')center/cover no-repeat;
+
+               }
+
+               .single-pop:hover .task-15{
+                 transform: scale(1.2);
+               }
+
+               .task-16{
+            
+                background:url('./pop/task-6.jpg')center/cover no-repeat;
+
+               }
+
+               .single-pop:hover .task-16{
+                 transform: scale(1.2);
+               }
+
+
+               .task-17{
+            
+                background:url('./pop/task-1.jpg')center/cover no-repeat;
+
+               }
+
+              .single-pop:hover .task-17{
+                 transform: scale(1.2);
+               }
+
+
+               .task-18{
+            
+                background:url('./pop/task-3.jpg')center/cover no-repeat;
+
+               }
+
+              .single-pop:hover .task-18{
+                 transform: scale(1.2);
+               }
+        
+        
+        
+                .single-pop .overlay{
+                    position: absolute;
+                  
+                   
+                    bottom:0;
+                    left:0;
+                    right: 0;
+                    background: rgba(0,0,0,0.8);
+                    overflow: hidden;
+                    width: 100%;
+                    height: 0%;
+                     /* transform: scale(0);  */
+                    transition: .5s ease;
+                   
+                    display:flex;
+                    flex-direction: column;
+                    
+                    justify-content: center;
+                    
+                
+                }
+                
+                .single-pop:hover .overlay{
+                  cursor: pointer;
+                    height: 37%;
+                }
+        
+        
+                .overlay p{
+                    color:#fff;
+                    margin: 0 20px;
+                    font-size: 18px;
+                    
+                    
+                     }
+
+                     .overlay  .organization{
+                      font-size: 17px;
+                      color: rgb(165, 160, 160);
+                     }
+        
+             @media screen and (min-width:376px){
+
+              .single-pop{
+               
+                width:100%;
+                margin:0px auto;
+                height:190px;
+              
+               /* cursor: pointer; */
+                }
+
+                .nameSurname{
+                  position: absolute;
+                  top:130px;
+                  left:20px;
+               
+                 
+                }
+        
+
+
+               .pop-center{
+                   display: grid;
+                   grid-template-columns: repeat(2,1fr);
+               }
+               
+             }
+
+             @media screen and (min-width:776px){
+                .pop-center{
+                    display: grid;
+                    grid-template-columns: repeat(3,1fr);
+                }
+                
+              }
+
+              @media screen and (min-width:976px){
+                .pop-center{
+                    display: grid;
+                    grid-template-columns: repeat(6,1fr);
+                }
+                
+              }
+
+
+
+               .mainRight{
+                 position: relative;
+               }
+
+               /* popBox */
+               .popBoxCentral{
+                 position: absolute;
+                 top: 0;
+                 left:0;
+                 right: 0;
+                 background: rgba(0,0,0,0.5);
+                 width: 100%;
+                 height: 100%;
+                display: none;
+                animation-name: example;
+                animation-duration: 0.5s;
+               
+               }
+
+               .newPopBoxCentral{
+                display: block;
+                opacity: 1;
+               }
+
+               .popBox{
+                 width: 89%;
+                 transition: all 1s ease;
+                 opacity: 1;
+
+                 margin:50px auto;
+                 border: 1px solid yellow;
+                 background: #ffffff;
+                 padding:10px 30px;
+                
+               }
+
+
+               @keyframes example {
+                from {
+                 transform: scale(0);
+                }
+                to {
+                  transform: scale(1);
+                }
+              }
+
+               .popBox-center{
+                 display: grid;
+                  justify-content: space-between;
+                  grid-template-columns: 95% 5%;
+                  grid-column-gap: 10px;
+                 
+               }
+
+               .popBox-right{
+                
+                 text-align: right;
+                 align-self: flex-start;
+                
+               }
+
+
+
+
+
+               .popBox-left{
+                overflow: auto;
+                 height:350px;
+               }
+
+               .popBox-left h4{
+                 color: #006fba;
+                 margin-bottom:10px;
+                 font-size: 21px;
+               }
+
+               .popBox-left p{
+                color: #606061;
+                font-size: 18px;
+               
+              }
+
+              iframe{
+                margin:20px 0;
+                width: 70%;
+              }
+
+
+               .titleBtn{
+                 background:#fff;
+                 display: flex;
+                 justify-content: space-between;
+                 /* padding: 10px 20px; */
+                 margin-bottom: 20px;
+                
+                
+
+               }
+
+               .titleBtn .title{
+                 color: #001a49;
+               }
+
+               .titleBtn .btnClose{
+                color: #ca2a5a;
+                cursor: pointer;
+                font-size: 25px;
+                opacity: 0.7;
+              }
+
+              .titleBtn .btnClose:hover{
+              
+                opacity: 1;
+              }
+
+
+            
+
+
+
+              /* popRight */
+              .popBox-right li{
+                list-style: none;
+               
+              }
+
+              .popBox-right li .fab{
+                font-size: 20px;
+                color:blue;
+      
+              }
+
+              @media screen and (min-width:776px){
+
+                iframe{
+                  margin:20px 0;
+                  width: 60%;
+                }
+
+
+              }
+
+              @media screen and (min-width:976px){
+
+                iframe{
+                  margin:20px 0;
+                  width: 60%;
+                  height: 290px;
+                }
+
+
+              }
+          
+               /* end of popBox */
+        
+        
+        
+        
